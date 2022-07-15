@@ -136,7 +136,6 @@ class ProbEcho(rpyc.Service):
         #Se já tiver recebido probe antes
         if probe:
             return 'ACK'
-        #Se não tiver recebido probe antes, salva seu processo pai e indica que a operação de probe foi bem sucessidade(apenas para melhor visualização)
         else:
             probe = True
             paias = id_pai
